@@ -7,8 +7,8 @@ def line(katz_deli, name = "")
   else 
     katz_deli.each.each_with_index do |customer, index|
       line_number = index + 1 
-    end 
     puts "The line is currently: #{line_number}. #{customer} "
+  end 
     katz_deli << name 
   end 
 end 
