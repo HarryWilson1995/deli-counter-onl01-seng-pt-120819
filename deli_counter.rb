@@ -3,10 +3,10 @@ katz_deli = []
 
 def line(array, name = "")
   if !array.length
-    return "The line is currently empty."
+    puts "The line is currently empty."
   else 
     array << name 
-    return "Welcome, #{name}. You are number #{array.length} in line."
+    puts "Welcome, #{name}. You are number #{array.length} in line."
   end 
 end 
     
