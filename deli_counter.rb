@@ -17,4 +17,5 @@ end
 def take_a_number(line, new_customer)
   line_number = line.length + 1 
   puts "Welcome, #{new_customer}. You are number #{line_number} in line."
+  line << new_customer
 end 
