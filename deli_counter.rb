@@ -1,16 +1,16 @@
 # Write your code here.
 katz_deli = []
 
-def line(katz_deli, name = "")
-  if katz_deli.length <= 1 
+def line(array) 
+  if array.length >= 1
+    nuarray = []
+    counter = 1 
+    array.each do |name|
+      nuarray.push("#{counter}. #{name}")
+      counter += 1 
+    end 
+    puts "The line is currently: #{nuarray.join(" ")}"
+  else
     puts "The line is currently empty."
-  else 
-    katz_deli.each.each_with_index do |customer, index|
-      line_number = index + 1 
-    puts "The line is currently: #{line_number}. #{customer} "
-  end 
-    katz_deli << name 
-  end 
-end 
-    
-  
+  end
+end
