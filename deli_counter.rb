@@ -14,4 +14,7 @@ def line(array)
   end
 end
 
-def take_a_number(k)
+def take_a_number(line, new_customer)
+  line_number = line.length + 1 
+  puts "#{new_customer}, you are number #{line_number} in line."
+end 
