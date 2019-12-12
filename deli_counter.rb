@@ -19,3 +19,5 @@ def take_a_number(line, new_customer)
   puts "Welcome, #{new_customer}. You are number #{line_number} in line."
   line << new_customer
 end 
+
+def now_serving()
