@@ -21,7 +21,10 @@ def take_a_number(line, new_customer)
 end 
 
 def now_serving(line)
-  if line.length < 1 
+  if line.length >=1 
+    puts "#{line[0]}, you are the next in line."
+    line.pop 
+  else
     puts "There is nobody waiting to be served!"
   end 
 end 
