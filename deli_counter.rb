@@ -22,7 +22,7 @@ end
 
 def now_serving(line)
   if line.length >=1 
-    puts "#{line[0]}, you are the next in line."
+    puts "Currently serving #{line[0]}."
     line.pop 
   else
     puts "There is nobody waiting to be served!"
